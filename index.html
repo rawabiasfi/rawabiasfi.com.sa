@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>شركة SFI</title>
+  <meta name="description" content="موقع تعريفي بسيط لشركة SFI">
+  <style>
+    :root{
+      --brand:#1668b7;
+      --text:#1b1b1b;
+      --bg:#f7f8fb;
+      --card:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Tahoma,Arial,"Noto Sans",sans-serif;color:var(--text);line-height:1.8}
+    a{color:var(--brand);text-decoration:none}
+    .container{width:min(1100px,92%);margin:auto}
+    header{padding:18px 0;background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 2px 12px rgba(0,0,0,.05)}
+    nav{display:flex;align-items:center;gap:18px;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:54px;width:auto}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:10px 16px;border:1px solid var(--brand);border-radius:10px}
+    .btn.primary{background:var(--brand);color:#fff;border-color:transparent}
+    .hero{display:grid;min-height:62vh;place-items:center;background:linear-gradient(180deg,#ffffff,#eef5ff)}
+    .hero-inner{display:grid;gap:16px;place-items:center;text-align:center;padding:40px 0}
+    .hero img{width:140px;aspect-ratio:1/1;object-fit:contain}
+    .hero h1{margin:0;font-size:clamp(26px,4vw,42px);color:#0d2b4f}
+    .hero p{margin:0;opacity:.8;max-width:65ch}
+    section{padding:54px 0}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 2px 18px rgba(0,0,0,.06)}
+    .card h3{margin:8px 0 6px 0}
+    .contact{display:grid;grid-template-columns:1.3fr .9fr;gap:18px}
+    .contact form{background:#fff;padding:18px;border-radius:14px;box-shadow:0 2px 18px rgba(0,0,0,.06)}
+    label{display:block;margin:8px 0 6px}
+    input,textarea{width:100%;padding:12px 14px;border:1px solid #d7dbe3;border-radius:10px;background:#fbfcff}
+    textarea{min-height:120px;resize:vertical}
+    footer{background:#0d2b4f;color:#fff;padding:28px 0;margin-top:20px}
+    .mini{font-size:14px;opacity:.85}
+    .list{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+    .list li{display:flex;align-items:center;gap:10px}
+    .bullet{display:inline-block;width:8px;height:8px;background:var(--brand);border-radius:50%}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <img src="logo.png" alt="شعار SFI">
+          <strong>شركة SFI</strong>
+        </div>
+        <div class="cta">
+          <a class="btn" href="#about">من نحن</a>
+          <a class="btn" href="#services">الخدمات</a>
+          <a class="btn primary" href="#contact">تواصل معنا</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <img src="logo.png" alt="شعار SFI">
+      <h1>حلول احترافية مع SFI</h1>
+      <p>نص تعريفي مختصر عن الشركة: نقدم خدمات عالية الجودة ونركز على تجربة العميل وسرعة التنفيذ.</p>
+      <div class="cta">
+        <a class="btn primary" href="#services">اكتشف خدماتنا</a>
+        <a class="btn" href="#contact">اطلب عرض سعر</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>من نحن</h2>
+      <p>هذا نموذج لموقع بسيط. يمكنك تعديل النصوص لتناسب نشاط شركتك. تم تصميم الصفحة لتكون سريعة وخفيفة ومتجاوبة مع الجوال.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>رؤيتنا</h3>
+          <p>بناء شراكات طويلة المدى عبر تقديم قيمة حقيقية ومخرجات قابلة للقياس.</p>
+        </div>
+        <div class="card">
+          <h3>رسالتنا</h3>
+          <p>تقديم حلول تقنية وإدارية فعالة تُسهم في نجاح عملائنا.</p>
+        </div>
+        <div class="card">
+          <h3>قيمنا</h3>
+          <ul class="list">
+            <li><span class="bullet"></span>الشفافية</li>
+            <li><span class="bullet"></span>الجودة</li>
+            <li><span class="bullet"></span>الالتزام</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>الخدمات</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>الاستشارات</h3>
+          <p>تحليل احتياجاتك وتقديم خارطة طريق واضحة للتنفيذ.</p>
+        </div>
+        <div class="card">
+          <h3>التطوير</h3>
+          <p>بناء حلول مخصصة وفقًا لأفضل الممارسات.</p>
+        </div>
+        <div class="card">
+          <h3>الدعم</h3>
+          <p>صيانة ومتابعة مستمرة لضمان استقرار العمل.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container contact">
+      <form onsubmit="event.preventDefault(); alert('تم إرسال رسالتك بنجاح (نموذج تجريبي).');">
+        <h2>تواصل معنا</h2>
+        <label for="name">الاسم</label>
+        <input id="name" name="name" placeholder="اكتب اسمك">
+        <label for="email">البريد الإلكتروني</label>
+        <input id="email" name="email" type="email" placeholder="name@example.com">
+        <label for="msg">الرسالة</label>
+        <textarea id="msg" name="message" placeholder="كيف نقدر نساعدك؟"></textarea>
+        <div style="margin-top:12px">
+          <button class="btn primary" type="submit">إرسال</button>
+        </div>
+      </form>
+
+      <div class="card">
+        <h3>معلومات التواصل</h3>
+        <ul class="list">
+          <li>📞 <a href="tel:+966500000000">+966 50 000 0000</a></li>
+          <li>✉️ <a href="mailto:info@sfi.com">info@sfi.com</a></li>
+          <li>📍 الرياض، المملكة العربية السعودية</li>
+          <li>🌐 <a href="https://example.com">example.com</a></li>
+          <li>واتساب: <a href="https://wa.me/966500000000">wa.me/966500000000</a></li>
+        </ul>
+        <p class="mini">لتعديل البيانات أعلاه غيّر الروابط/الأرقام في وسم &lt;ul&gt;.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div>© <span id="year"></span> شركة SFI — جميع الحقوق محفوظة.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
